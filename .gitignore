@@ -52,6 +52,9 @@ logs
 **/*.backup.*
 **/*.back.*
 
+yarn.lock
+package-lock.json
+
 node_modules
 bower_components
 
