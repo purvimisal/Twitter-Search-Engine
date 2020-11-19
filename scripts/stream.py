@@ -9,11 +9,16 @@ import json
 from pymongo import MongoClient
 
 
+consumer_key = ''
+consumer_secret = ''
+access_token_key = ''
+access_token_secret = ''
 
 class Streamlistener(tweepy.StreamListener):
     def __init__(self, api=None):
         super().__init__(api=api)
-        self.tweet_data = []
+        self.counter = 0
+
 
     def on_connect(self):
         print("You are connected to the Twitter API")
@@ -25,17 +30,36 @@ class Streamlistener(tweepy.StreamListener):
             return False
     
     def on_data(self, data):
-        # saveFile = io.open('raw_tweets.json', 'a', encoding='utf-8')
         try:
-            self.tweet_data.append(data)
-            mongoclient = MongoClient('mongodb://user:user@localhost:27017')
-
+            mongoclient = MongoClient('')
+            tweetdata = {}
+            if self.counter == 100_000:
+                return
+            self.counter += 1
             try:
                 db = mongoclient['twitterdb']
                 collection = db['twitter_collection']
                 tweet = json.loads(data)
-                collection.insert(tweet)
-                print('INSERTED!!')
+                
+                tweetdata['id'] = tweet['id']
+                tweetdata['text'] = tweet['text']
+                tweetdata['created_at'] = tweet['created_at']
+                tweetdata['user_screen_name'] = tweet['user']['screen_name']
+                tweetdata['user_name'] = tweet['user']['name']
+                tweetdata['user_location'] = tweet['user']['location']
+                tweetdata['user_description'] = tweet['user']['description']
+                tweetdata['geo'] = tweet['geo']
+                tweetdata['coordinates'] = tweet['coordinates']
+                tweetdata['place'] = tweet['place']
+                tweetdata['lang'] = tweet['lang']
+                tweetdata['entities'] = tweet['entities']
+                tweetdata['retweet_count'] = tweet['retweet_count']
+                tweetdata['reply_count'] = tweet['reply_count']
+                tweetdata['quote_count'] = tweet['quote_count']
+                # print(tweetdata)
+                
+                collection.insert(tweetdata)
+                # print('INSERTED!!')
                 return True 
             except BaseException as e:
                 print('Error storing into collection', e)
@@ -59,6 +83,7 @@ if __name__ == '__main__':
     api = tweepy.API(auth,wait_on_rate_limit=True)
     listener = Streamlistener(api =api)
     stream = tweepy.Stream(auth, listener = listener)
-    track = ['cricket']
+    track = ['cricket', 'ipl', 'India vs Australia', 'BCCI', 'Sourav Ganguly', 'Virat kohli', 'Espn', 'cricInfo', 'cricBuzz', 'IPL2020', 'ICC', 'SportsCenter', 'Rohit Sharma', 'Sachin', 'BigBash']
     
     stream.filter(track = track,languages = ['en'])
+    # saveFile = io.open('raw_tweets.json', 'a', encoding='utf-8')
