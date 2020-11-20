@@ -30,6 +30,9 @@ for tweet in tweet_dictionary[5:]:
     tweetdata['retweet_count'] = tweet['retweet_count']
     tweetdata['reply_count'] = tweet['reply_count']
     tweetdata['quote_count'] = tweet['quote_count']
-    collection.insert(tweetdata)
+    try:
+        collection.insert(tweetdata)
+    except Exception as e:
+        print(tweet['id'],'Error occured' , e)
 
 print('DONE!!')
