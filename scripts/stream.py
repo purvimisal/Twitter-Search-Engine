@@ -68,7 +68,8 @@ if __name__ == '__main__':
     api = tweepy.API(auth,wait_on_rate_limit=True)
     listener = Streamlistener(api =api)
     stream = tweepy.Stream(auth, listener = listener)
-    track = ['cricket', 'ipl', 'India vs Australia', 'BCCI', 'Sourav Ganguly', 'Virat kohli', 'Espn', 'cricInfo', 'cricBuzz', 'IPL2020', 'ICC', 'SportsCenter', 'Rohit Sharma', 'Sachin', 'BigBash']
-    
+#     track = ['cricket', 'ipl', 'India vs Australia', 'BCCI', 'Sourav Ganguly', 'Virat kohli', 'Espn', 'cricInfo', 'cricBuzz', 'IPL2020', 'ICC', 'SportsCenter', 'Rohit Sharma', 'Sachin', 'BigBash']
+    track = ['Football','Epl','Bundesliga','La liga','Arsenal', 'NFL', 'Cristiano Ronaldo', 'cr7', 'Liverpool','Champions league','Messi', 'Ronaldo', 'Manchester united', 'Barcelona', 'Real Madrid']
+
     stream.filter(track = track,languages = ['en'])
     
