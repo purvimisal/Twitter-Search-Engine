@@ -1,0 +1,867 @@
+{
+	'tweet': {
+		'_id': ObjectId('5fbc1ed63982817acdbbd320'),
+		'id': 1330833209609908224,
+		'text': 'https://t.co/wHgn90EFhG : 9348cb0b-6937-4111-a56a-5040634b75bc',
+		'created_at': 'Mon Nov 23 11:18:57 +0000 2020',
+		'user_screen_name': 'test5f1798',
+		'user_name': 'Test Account1',
+		'user_location': 'Alsace, France',
+		'user_description': '皇家午餐肉制造机',
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [],
+			'urls': [{
+				'url': 'https://t.co/wHgn90EFhG',
+				'expanded_url': 'http://espn.com',
+				'display_url': 'espn.com',
+				'indices': [0, 23]
+			}],
+			'user_mentions': [],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.5568954395902341
+}, {
+	'tweet': {
+		'_id': ObjectId('5fbc1a6d3982817acdbb77f2'),
+		'id': 1330773715986968576,
+		'text': "RT @ArgusSports: It's the first state title since 2014 for the @OGHSKnights (26-0), who are the first undefeated AA champion since 1991 (Wa…",
+		'created_at': 'Mon Nov 23 07:22:33 +0000 2020',
+		'user_screen_name': 'growingaway',
+		'user_name': 'President-Elect Celia ⭐️⭐️⭐️ #StopTheSteal',
+		'user_location': 'Las Vegas, NV 🌸🗡️#NotMyGovernor',
+		'user_description': 'God, family, country. criminal justice. psychology. politics. small towns. #KeepTexasRed #BackTheBlue 1A 2A #MAGA🇺🇲 #KAG🦅 #FightBack #ACB⚖️ Cue🔔 🏳️\u200d🌈🐘',
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [],
+			'urls': [],
+			'user_mentions': [{
+				'screen_name': 'ArgusSports',
+				'name': 'Argus Leader Sports',
+				'id': 240425263,
+				'id_str': '240425263',
+				'indices': [3, 15]
+			}, {
+				'screen_name': 'OGHSKnights',
+				'name': "O'Gorman High School",
+				'id': 795047084,
+				'id_str': '795047084',
+				'indices': [63, 75]
+			}],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.4957066531340021
+}, {
+	'tweet': {
+		'_id': ObjectId('5fb94dab5610d30e4e222507'),
+		'id': 1329976904653352960,
+		'text': 'https://t.co/KOzuyFOGAS old guy in here open mic before aa meeting get in here lol #zoomcodes',
+		'created_at': 'Sat Nov 21 02:36:18 +0000 2020',
+		'user_screen_name': 'eb_tman',
+		'user_name': 'TheEBTman',
+		'user_location': None,
+		'user_description': None,
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [{
+				'text': 'zoomcodes',
+				'indices': [83, 93]
+			}],
+			'urls': [{
+				'url': 'https://t.co/KOzuyFOGAS',
+				'expanded_url': 'https://zoom.us/j/5754049776#success',
+				'display_url': 'zoom.us/j/5754049776#s…',
+				'indices': [0, 23]
+			}],
+			'user_mentions': [],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.45581168828091373
+}, {
+	'tweet': {
+		'_id': ObjectId('5fbc1be73982817acdbb9586'),
+		'id': 1330791790811594752,
+		'text': '@suriharshygmai3 @doddaganesha @SonySportsIndia @UdayaTV @ColorsKannada @StarSuvarna Sony Sports Network owner nivu Aa 😂😂😂😂😂😂',
+		'created_at': 'Mon Nov 23 08:34:22 +0000 2020',
+		'user_screen_name': 'Roha197',
+		'user_name': 'Rohan',
+		'user_location': 'D.K, Karnataka, India',
+		'user_description': None,
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [],
+			'urls': [],
+			'user_mentions': [{
+				'screen_name': 'suriharshygmai3',
+				'name': "I'm Harsuri",
+				'id': 896469822976012289,
+				'id_str': '896469822976012289',
+				'indices': [0, 16]
+			}, {
+				'screen_name': 'doddaganesha',
+				'name': 'ದೊಡ್ಡ ಗಣೇಶ್ | Dodda Ganesh',
+				'id': 919591555,
+				'id_str': '919591555',
+				'indices': [17, 30]
+			}, {
+				'screen_name': 'SonySportsIndia',
+				'name': 'Sony Sports',
+				'id': 508656152,
+				'id_str': '508656152',
+				'indices': [31, 47]
+			}, {
+				'screen_name': 'UdayaTV',
+				'name': 'udayaTV',
+				'id': 1221099836,
+				'id_str': '1221099836',
+				'indices': [48, 56]
+			}, {
+				'screen_name': 'ColorsKannada',
+				'name': 'Colors Kannada',
+				'id': 172708465,
+				'id_str': '172708465',
+				'indices': [57, 71]
+			}, {
+				'screen_name': 'StarSuvarna',
+				'name': 'Star Suvarna',
+				'id': 978137065,
+				'id_str': '978137065',
+				'indices': [72, 84]
+			}],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.44017917576968935
+}, {
+	'tweet': {
+		'_id': ObjectId('5fb7fe237cbb04769210dd06'),
+		'id': 1329728573004001281,
+		'text': 'AA: “We want to win every single football match that we play as an academy, however, winning for an academy is gett… https://t.co/SWriRebdWM',
+		'created_at': 'Fri Nov 20 10:09:31 +0000 2020',
+		'user_screen_name': 'LutonNews_LTFC',
+		'user_name': 'LutonNews_LTFC',
+		'user_location': None,
+		'user_description': 'The official Luton Town FC Twitter page of the Luton News run by Mike Simmonds, reporter on all things Hatters.',
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [],
+			'urls': [{
+				'url': 'https://t.co/SWriRebdWM',
+				'expanded_url': 'https://twitter.com/i/web/status/1329728573004001281',
+				'display_url': 'twitter.com/i/web/status/1…',
+				'indices': [117, 140]
+			}],
+			'user_mentions': [],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.3703379850901579
+}, {
+	'tweet': {
+		'_id': ObjectId('5fbc1e0d3982817acdbbc265'),
+		'id': 1330821997404823552,
+		'text': '@ICC @babarazam258 Whenever i Listen some one going on a Flight, mujhe Abhinandan Yaad aa jaata hai😂',
+		'created_at': 'Mon Nov 23 10:34:24 +0000 2020',
+		'user_screen_name': 'UmairAhmad0123',
+		'user_name': 'Umair Ahmad Ghumman',
+		'user_location': 'Lyallpur, Pakistan',
+		'user_description': 'Political Scientist 🙄',
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [],
+			'urls': [],
+			'user_mentions': [{
+				'screen_name': 'ICC',
+				'name': 'ICC',
+				'id': 177547780,
+				'id_str': '177547780',
+				'indices': [0, 4]
+			}, {
+				'screen_name': 'babarazam258',
+				'name': 'Babar Azam',
+				'id': 2526480081,
+				'id_str': '2526480081',
+				'indices': [5, 18]
+			}],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.33460159434751807
+}, {
+	'tweet': {
+		'_id': ObjectId('5fbc1f223982817acdbbda04'),
+		'id': 1330836958222946305,
+		'text': 'Proud of the 8AAACP #LB21Matadors  for taking 2nd place in the @maruccisports 9AA kid pitch #woodbat tournament @ S… https://t.co/QGSYGzDUXw',
+		'created_at': 'Mon Nov 23 11:33:51 +0000 2020',
+		'user_screen_name': 'Roberto_Garza63',
+		'user_name': 'Roberto Garza',
+		'user_location': None,
+		'user_description': 'Husband, father, Chicago Bear. Born & bred Texan on my 9th season in Chicago. First season on United Way TEAM NFL. Keep up w/me here: http://bit.ly/1bqm9ul',
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [{
+				'text': 'LB21Matadors',
+				'indices': [20, 33]
+			}, {
+				'text': 'woodbat',
+				'indices': [92, 100]
+			}],
+			'urls': [{
+				'url': 'https://t.co/QGSYGzDUXw',
+				'expanded_url': 'https://twitter.com/i/web/status/1330836958222946305',
+				'display_url': 'twitter.com/i/web/status/1…',
+				'indices': [117, 140]
+			}],
+			'user_mentions': [{
+				'screen_name': 'MarucciSports',
+				'name': 'Marucci',
+				'id': 90502888,
+				'id_str': '90502888',
+				'indices': [63, 77]
+			}],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.32904197859301926
+}, {
+	'tweet': {
+		'_id': ObjectId('5fbc1b403982817acdbb883b'),
+		'id': 1330783557564784647,
+		'text': 'Oak Glen Advances to Class AA State Semifinals - Wheeling Intelligencer https://t.co/5QClbsQvhA #SportsNews #Sports',
+		'created_at': 'Mon Nov 23 08:01:39 +0000 2020',
+		'user_screen_name': 'robinsportsnews',
+		'user_name': 'Sports News & Videos',
+		'user_location': "RT's Are FYI Purposes Only",
+		'user_description': 'Join http://RobinsPost.com for the best Sports News & Videos. Get the best updates on sports events and opinions from members of Twitter. Feel the excitement!',
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [{
+				'text': 'SportsNews',
+				'indices': [96, 107]
+			}, {
+				'text': 'Sports',
+				'indices': [108, 115]
+			}],
+			'urls': [{
+				'url': 'https://t.co/5QClbsQvhA',
+				'expanded_url': 'https://ift.tt/3m8JfBq',
+				'display_url': 'ift.tt/3m8JfBq',
+				'indices': [72, 95]
+			}],
+			'user_mentions': [],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.32652338852843066
+}, {
+	'tweet': {
+		'_id': ObjectId('5fbc1b8b3982817acdbb8ded'),
+		'id': 1330786845215518728,
+		'text': "@mrr3141 @KOHLICULTONE8 @mufaddal_vohra Average ki baat thi r IPL pe aa Gaye shows Rohit Sharma's standard in International cricket .",
+		'created_at': 'Mon Nov 23 08:14:43 +0000 2020',
+		'user_screen_name': 'VamosVirat',
+		'user_name': 'Aivy',
+		'user_location': '🚩🌎',
+		'user_description': 'एको विराट द्वितीयो नास्ति न भूतो न भविष्यती',
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [],
+			'urls': [],
+			'user_mentions': [{
+				'screen_name': 'mrr3141',
+				'name': 'shaatokarey',
+				'id': 1233279566849794050,
+				'id_str': '1233279566849794050',
+				'indices': [0, 8]
+			}, {
+				'screen_name': 'KOHLICULTONE8',
+				'name': 'Kohl!s_Wârrior™',
+				'id': 1189741945985228800,
+				'id_str': '1189741945985228800',
+				'indices': [9, 23]
+			}, {
+				'screen_name': 'mufaddal_vohra',
+				'name': 'Mufaddal Vohra',
+				'id': 3133996860,
+				'id_str': '3133996860',
+				'indices': [24, 39]
+			}],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.3259199980768861
+}, {
+	'tweet': {
+		'_id': ObjectId('5fb94b035610d30e4e21eb35'),
+		'id': 1329898536260001797,
+		'text': "Located minutes from the beach-east of A1A! Built in 2015! Professionally decorated! St John's County Schools! Room… https://t.co/j96KIHYv56",
+		'created_at': 'Fri Nov 20 21:24:54 +0000 2020',
+		'user_screen_name': 'PVClubRealty',
+		'user_name': 'PV Club Realty',
+		'user_location': 'Ponte Vedra Beach, Florida',
+		'user_description': 'Ponte Vedra Beach oceanfront homes & condos, lots & vacant land & intracoastal property sales. Proudly affiliated with the Inn & Club and The Lodge & Club.',
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [],
+			'urls': [{
+				'url': 'https://t.co/j96KIHYv56',
+				'expanded_url': 'https://twitter.com/i/web/status/1329898536260001797',
+				'display_url': 'twitter.com/i/web/status/1…',
+				'indices': [117, 140]
+			}],
+			'user_mentions': [],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.32583277898243956
+}, {
+	'tweet': {
+		'_id': ObjectId('5fbc1f7f3982817acdbbe1bc'),
+		'id': 1330841235527897088,
+		'text': 'Who do you think will be the Man of the Match? 🤔\n\nStay tuned! Asli Cricket aa raha hai JioTV pe! 💥\n\n#MondayThoughts… https://t.co/kl6fIbcgND',
+		'created_at': 'Mon Nov 23 11:50:51 +0000 2020',
+		'user_screen_name': 'OfficialJioTV',
+		'user_name': 'JioTV',
+		'user_location': 'India',
+		'user_description': 'Official Twitter handle of JioTV. The app lets you watch 600+ Live TV channels & past 7 days programs on any device, any time. For support - care@jio.com',
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [{
+				'text': 'MondayThoughts',
+				'indices': [100, 115]
+			}],
+			'urls': [{
+				'url': 'https://t.co/kl6fIbcgND',
+				'expanded_url': 'https://twitter.com/i/web/status/1330841235527897088',
+				'display_url': 'twitter.com/i/web/status/1…',
+				'indices': [117, 140]
+			}],
+			'user_mentions': [],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.3223390792876355
+}, {
+	'tweet': {
+		'_id': ObjectId('5fb94b5f5610d30e4e21f357'),
+		'id': 1329908875546529795,
+		'text': "Grab your favorite cocktail and join us for the AA-ISP Providence Chapter's Virtual Holiday Meet-up! This will be a… https://t.co/LMf6Q4U3JO",
+		'created_at': 'Fri Nov 20 22:05:59 +0000 2020',
+		'user_screen_name': 'AA_ISP',
+		'user_name': 'AA-ISP',
+		'user_location': 'USA',
+		'user_description': 'Dedicated exclusively to advancing the profession of #InsideSales with a goal to provide a trusted resource for leaders and sales reps.',
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [],
+			'urls': [{
+				'url': 'https://t.co/LMf6Q4U3JO',
+				'expanded_url': 'https://twitter.com/i/web/status/1329908875546529795',
+				'display_url': 'twitter.com/i/web/status/1…',
+				'indices': [117, 140]
+			}],
+			'user_mentions': [],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.3174070174189142
+}, {
+	'tweet': {
+		'_id': ObjectId('5fb94fcc5610d30e4e22511d'),
+		'id': 1330058893788123138,
+		'text': 'Open mic AA raid this shit\n#zoomcodes #zoomraids #zoombombing #zoom #zoomcodess \nhttps://t.co/AYQViXqZJL',
+		'created_at': 'Sat Nov 21 08:02:06 +0000 2020',
+		'user_screen_name': 'Bomby45774014',
+		'user_name': 'Bomby',
+		'user_location': None,
+		'user_description': None,
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [{
+				'text': 'zoomcodes',
+				'indices': [27, 37]
+			}, {
+				'text': 'zoomraids',
+				'indices': [38, 48]
+			}, {
+				'text': 'zoombombing',
+				'indices': [49, 61]
+			}, {
+				'text': 'zoom',
+				'indices': [62, 67]
+			}, {
+				'text': 'zoomcodess',
+				'indices': [68, 79]
+			}],
+			'urls': [{
+				'url': 'https://t.co/AYQViXqZJL',
+				'expanded_url': 'https://us04web.zoom.us/j/478374798#success',
+				'display_url': 'us04web.zoom.us/j/478374798#su…',
+				'indices': [81, 104]
+			}],
+			'user_mentions': [],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.3168602237397873
+}, {
+	'tweet': {
+		'_id': ObjectId('5fbc1c0b3982817acdbb9886'),
+		'id': 1330793702524997632,
+		'text': 'Which bowler will have the biggest impact in #INDvsAUS this year? 🤔\n\nAsli Cricket aa raha hai JioTV pe! \nStay tuned… https://t.co/V5Y4HqwrWZ',
+		'created_at': 'Mon Nov 23 08:41:58 +0000 2020',
+		'user_screen_name': 'OfficialJioTV',
+		'user_name': 'JioTV',
+		'user_location': 'India',
+		'user_description': 'Official Twitter handle of JioTV. The app lets you watch 600+ Live TV channels & past 7 days programs on any device, any time. For support - care@jio.com',
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [{
+				'text': 'INDvsAUS',
+				'indices': [45, 54]
+			}],
+			'urls': [{
+				'url': 'https://t.co/V5Y4HqwrWZ',
+				'expanded_url': 'https://twitter.com/i/web/status/1330793702524997632',
+				'display_url': 'twitter.com/i/web/status/1…',
+				'indices': [117, 140]
+			}],
+			'user_mentions': [],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.31342970450145574
+}, {
+	'tweet': {
+		'_id': ObjectId('5fbc1de43982817acdbbbee0'),
+		'id': 1330819542960902145,
+		'text': 'Now this is what we call, SQUAD GOALS! 💙\n\nStay tuned, Asli Cricket aa raha hai JioTV pe! 🤩\n\n#INDvAUS #AUSvIND… https://t.co/xsv2oUzCgF',
+		'created_at': 'Mon Nov 23 10:24:39 +0000 2020',
+		'user_screen_name': 'OfficialJioTV',
+		'user_name': 'JioTV',
+		'user_location': 'India',
+		'user_description': 'Official Twitter handle of JioTV. The app lets you watch 600+ Live TV channels & past 7 days programs on any device, any time. For support - care@jio.com',
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [{
+				'text': 'INDvAUS',
+				'indices': [92, 100]
+			}, {
+				'text': 'AUSvIND',
+				'indices': [101, 109]
+			}],
+			'urls': [{
+				'url': 'https://t.co/xsv2oUzCgF',
+				'expanded_url': 'https://twitter.com/i/web/status/1330819542960902145',
+				'display_url': 'twitter.com/i/web/status/1…',
+				'indices': [111, 134]
+			}],
+			'user_mentions': [],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.30694788247374083
+}, {
+	'tweet': {
+		'_id': ObjectId('5fbc1b433982817acdbb886d'),
+		'id': 1330783665110929409,
+		'text': 'Choose your favourite Australian batsman! 🏏\n\nStay tuned, Asli Cricket aa raha hai JioTV pe! 💥\n\n#AsliCricketonJioTV… https://t.co/PSgVi5eHnS',
+		'created_at': 'Mon Nov 23 08:02:05 +0000 2020',
+		'user_screen_name': 'OfficialJioTV',
+		'user_name': 'JioTV',
+		'user_location': 'India',
+		'user_description': 'Official Twitter handle of JioTV. The app lets you watch 600+ Live TV channels & past 7 days programs on any device, any time. For support - care@jio.com',
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [{
+				'text': 'AsliCricketonJioTV',
+				'indices': [95, 114]
+			}],
+			'urls': [{
+				'url': 'https://t.co/PSgVi5eHnS',
+				'expanded_url': 'https://twitter.com/i/web/status/1330783665110929409',
+				'display_url': 'twitter.com/i/web/status/1…',
+				'indices': [116, 139]
+			}],
+			'user_mentions': [],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.3010818494978257
+}, {
+	'tweet': {
+		'_id': ObjectId('5fbc19fa3982817acdbb6f5b'),
+		'id': 1330769109911445504,
+		'text': '@Cricbites @imVkohli @navdeepsaini96 Rohit play playoffs prove he is fit but sabki ego par aa gyi,nhi lekar gye,sab… https://t.co/gdGIcAkdX6',
+		'created_at': 'Mon Nov 23 07:04:14 +0000 2020',
+		'user_screen_name': 'Manojgour97',
+		'user_name': 'Manoj',
+		'user_location': None,
+		'user_description': None,
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [],
+			'urls': [{
+				'url': 'https://t.co/gdGIcAkdX6',
+				'expanded_url': 'https://twitter.com/i/web/status/1330769109911445504',
+				'display_url': 'twitter.com/i/web/status/1…',
+				'indices': [117, 140]
+			}],
+			'user_mentions': [{
+				'screen_name': 'Cricbites',
+				'name': 'Cricbuzz',
+				'id': 1318938307510685696,
+				'id_str': '1318938307510685696',
+				'indices': [0, 10]
+			}, {
+				'screen_name': 'imVkohli',
+				'name': 'Virat Kohli',
+				'id': 71201743,
+				'id_str': '71201743',
+				'indices': [11, 20]
+			}, {
+				'screen_name': 'navdeepsaini96',
+				'name': 'Navdeep Saini',
+				'id': 835896862871863298,
+				'id_str': '835896862871863298',
+				'indices': [21, 36]
+			}],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.2738097060697513
+}, {
+	'tweet': {
+		'_id': ObjectId('5fbc1d273982817acdbbaf64'),
+		'id': 1330808468245159936,
+		'text': 'Who will win the toss? 🤔\n\nStay tuned kyunki Asli Cricket aa raha hai JioTV pe! 🤩\n\n#AsliCricketonJioTV #INDvAUS #AUSvIND #MondayMotivation',
+		'created_at': 'Mon Nov 23 09:40:38 +0000 2020',
+		'user_screen_name': 'OfficialJioTV',
+		'user_name': 'JioTV',
+		'user_location': 'India',
+		'user_description': 'Official Twitter handle of JioTV. The app lets you watch 600+ Live TV channels & past 7 days programs on any device, any time. For support - care@jio.com',
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [{
+				'text': 'AsliCricketonJioTV',
+				'indices': [82, 101]
+			}, {
+				'text': 'INDvAUS',
+				'indices': [102, 110]
+			}, {
+				'text': 'AUSvIND',
+				'indices': [111, 119]
+			}, {
+				'text': 'MondayMotivation',
+				'indices': [120, 137]
+			}],
+			'urls': [],
+			'user_mentions': [],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.2678280220012779
+}, {
+	'tweet': {
+		'_id': ObjectId('5fbc1e093982817acdbbc21d'),
+		'id': 1330821801241309184,
+		'text': 'RT @Manojgour97: @Cricbites @imVkohli @navdeepsaini96 Rohit play playoffs prove he is fit but sabki ego par aa gyi,nhi lekar gye,sab sale m…',
+		'created_at': 'Mon Nov 23 10:33:37 +0000 2020',
+		'user_screen_name': 'HariomR24794034',
+		'user_name': 'Hariom Rana',
+		'user_location': 'Kalaunda ',
+		'user_description': None,
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [],
+			'urls': [],
+			'user_mentions': [{
+				'screen_name': 'Manojgour97',
+				'name': 'Manoj',
+				'id': 1258078202318159874,
+				'id_str': '1258078202318159874',
+				'indices': [3, 15]
+			}, {
+				'screen_name': 'Cricbites',
+				'name': 'Cricbuzz',
+				'id': 1318938307510685696,
+				'id_str': '1318938307510685696',
+				'indices': [17, 27]
+			}, {
+				'screen_name': 'imVkohli',
+				'name': 'Virat Kohli',
+				'id': 71201743,
+				'id_str': '71201743',
+				'indices': [28, 37]
+			}, {
+				'screen_name': 'navdeepsaini96',
+				'name': 'Navdeep Saini',
+				'id': 835896862871863298,
+				'id_str': '835896862871863298',
+				'indices': [38, 53]
+			}],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.26673130156066216
+}, {
+	'tweet': {
+		'_id': ObjectId('5fbc19a63982817acdbb6933'),
+		'id': 1330765675854323717,
+		'text': '@rawadidev OK cmon and check your cricket knowledge with me 😂\nMaloom kuch hai nahi cricket ke bare me bhokne Aa gaye',
+		'created_at': 'Mon Nov 23 06:50:36 +0000 2020',
+		'user_screen_name': 'GautamMsdian',
+		'user_name': 'Gautam Vats(Msdian 💛💛)',
+		'user_location': 'India',
+		'user_description': '🙃🙃\n\n\nCricket enthusiast \n\n\n\n\n#MsDhoni devotee\n\n\n#Msdianforlife\n\n\n#Msdhoni 💛💛\n\n\n2nd  account - will follow back \n\n#Csk\n\n\n#yellove\n\n\nProud indian',
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [],
+			'urls': [],
+			'user_mentions': [{
+				'screen_name': 'rawadidev',
+				'name': 'rawadidev',
+				'id': 1327875614951542784,
+				'id_str': '1327875614951542784',
+				'indices': [0, 10]
+			}],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.26425481851100985
+}, {
+	'tweet': {
+		'_id': ObjectId('5fbc169c3982817acdbb2f6c'),
+		'id': 1330737949869182976,
+		'text': '@BCCI @navdeepsaini96 Rohit play playoffs prove he is fit but sabki ego par aa gyi,nhi lekar gye,sab sale milkar pu… https://t.co/nbxOKW3fb5',
+		'created_at': 'Mon Nov 23 05:00:25 +0000 2020',
+		'user_screen_name': 'Manojgour97',
+		'user_name': 'Manoj',
+		'user_location': None,
+		'user_description': None,
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [],
+			'urls': [{
+				'url': 'https://t.co/nbxOKW3fb5',
+				'expanded_url': 'https://twitter.com/i/web/status/1330737949869182976',
+				'display_url': 'twitter.com/i/web/status/1…',
+				'indices': [117, 140]
+			}],
+			'user_mentions': [{
+				'screen_name': 'BCCI',
+				'name': 'BCCI',
+				'id': 185142711,
+				'id_str': '185142711',
+				'indices': [0, 5]
+			}, {
+				'screen_name': 'navdeepsaini96',
+				'name': 'Navdeep Saini',
+				'id': 835896862871863298,
+				'id_str': '835896862871863298',
+				'indices': [6, 21]
+			}],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.24526553410773594
+}, {
+	'tweet': {
+		'_id': ObjectId('5fbc1da13982817acdbbb9b5'),
+		'id': 1330815980675719168,
+		'text': '@RehamKhan1 Cricket match khelnay national duty thi. Aur ye apni chori bahanay main nai aa rahay.. What a low intellct lev you have miss',
+		'created_at': 'Mon Nov 23 10:10:29 +0000 2020',
+		'user_screen_name': 'RAK_Marx',
+		'user_name': 'Rizwan Khan',
+		'user_location': None,
+		'user_description': None,
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [],
+			'urls': [],
+			'user_mentions': [{
+				'screen_name': 'RehamKhan1',
+				'name': 'Reham Khan',
+				'id': 298959564,
+				'id_str': '298959564',
+				'indices': [0, 11]
+			}],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.22901211486592996
+}, {
+	'tweet': {
+		'_id': ObjectId('5fb94a4c5610d30e4e21dc12'),
+		'id': 1329881512926384131,
+		'text': 'Check out Cisco 891 Cisco891-k9 V02 Gigabit Ethernet Security Router AA New Open Box #Cisco https://t.co/eDmvZYSRNg via @eBay',
+		'created_at': 'Fri Nov 20 20:17:15 +0000 2020',
+		'user_screen_name': 'AustinCyberShop',
+		'user_name': 'Austin Cyber Shop',
+		'user_location': 'Austin, Texas',
+		'user_description': 'We are an online reseller of new and refurbished electronics and computer hardware.\r\nhttp://stores.ebay.com/Cyberinfinity',
+		'geo': None,
+		'coordinates': None,
+		'place': None,
+		'lang': 'en',
+		'entities': {
+			'hashtags': [{
+				'text': 'Cisco',
+				'indices': [85, 91]
+			}],
+			'urls': [{
+				'url': 'https://t.co/eDmvZYSRNg',
+				'expanded_url': 'https://ebay.us/Xhmi3e',
+				'display_url': 'ebay.us/Xhmi3e',
+				'indices': [92, 115]
+			}],
+			'user_mentions': [{
+				'screen_name': 'eBay',
+				'name': 'eBay',
+				'id': 19709040,
+				'id_str': '19709040',
+				'indices': [120, 125]
+			}],
+			'symbols': []
+		},
+		'retweet_count': 0,
+		'reply_count': 0,
+		'quote_count': 0
+	},
+	'score': 0.21883763129950276
+}
