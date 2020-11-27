@@ -97,6 +97,78 @@ def searchText():
     json_data = json.loads(dumps(response))
     return jsonify({'data': json_data })
 
+
+#search fields API
+@app.route('/searchFields',methods=['GET'])
+def search_fields():
+    global doc_collection,tweet_collection
+
+    ''' 
+    Request Object:
+    {
+        "user_name": "",
+        "user_location": "",
+        "user_mention":"",
+        "hashtag": "",
+    }
+    '''
+    json_body = request.get_json()
+    query = {}
+    field_count = 0
+    if json_body['user_name']:
+        field_count += 1
+        query['user_name'] = json_body['user_name'] 
+    
+    if json_body['user_location']:
+        field_count += 1
+        query['user_location'] = json_body['user_location']
+    
+    # if json_body['user_description']:
+    #     field_count += 1
+    #     query['$text'] = { "$search": json_body['user_description']}
+    
+    if json_body['user_mention']:
+        field_count += 1
+        query['entitities.user_mentions.name'] =  json_body['user_mention'] 
+    
+    if json_body['hashtag']:
+        field_count += 1
+        query['entities.hashtags.text'] = json_body['hashtag']
+    
+    if field_count == 0:
+        return jsonify({'error': 'Please fill at least one query field'})
+    
+    filter_list = []
+    for key, val in query.items():
+        filter_list.append({key:val})
+
+    and_query = {"$and" : filter_list}
+    response_and = list(tweet_collection.find(and_query))
+    if field_count == 1 or len(response_and)>=MAX: 
+        response = json.loads(dumps(response_and))
+        return jsonify(response)
+    elif len(response_and) == 0:
+        or_query = {"$or" : filter_list}
+        response_or = list(tweet_collection.find(or_query).limit(MAX))
+        response = json.loads(dumps(response_or))
+        return jsonify(response)
+    else:
+        lim = MAX-len(response_and)
+        or_query = {"$or" : filter_list}
+        response_or = list(tweet_collection.find(or_query).limit(lim))
+        if len(response_and) == len(response_or):
+            response = json.loads(dumps(response_or))
+            return jsonify(response)
+
+    response = response_and.copy()
+    for obj in response_or:
+        if obj not in response_and:
+            response.append(obj)
+
+    response = json.loads(dumps(response))
+    return jsonify(response)
+    
+
 #method to connect Db
 def connectDb():
     global doc_collection,tweet_collection
@@ -110,4 +182,3 @@ def connectDb():
 
 
 connectDb()
-
