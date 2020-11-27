@@ -1,9 +1,11 @@
 import time
 import json
-from flask import Flask,Response,request
+from flask import Flask,Response,request,jsonify
 from pymongo import MongoClient
 import pprint
 from bson.objectid import ObjectId
+from bson.json_util import dumps
+from bson.json_util import loads
 
 app = Flask(__name__)
 doc_collection = None
@@ -86,8 +88,14 @@ def searchText():
     #print('final response' + str(response))
 
     print(type(response))
-    print(len(response))
-    return Response(response = json.dumps(str(response)),status=200,content_type='Application/json')
+    #json_list = []
+    #for res in response:
+    #    json_obj = {'doc_info':res}
+     #   json_list.append(json.dumps(json_obj))
+
+
+    json_data = json.loads(dumps(response))
+    return jsonify({'data': json_data })
 
 #method to connect Db
 def connectDb():
