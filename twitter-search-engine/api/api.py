@@ -6,11 +6,15 @@ import pprint
 from bson.objectid import ObjectId
 from bson.json_util import dumps
 from bson.json_util import loads
+from flask_cors import CORS
+
 
 app = Flask(__name__)
+cors = CORS(app)
+
 doc_collection = None
 tweet_collection = None
-MAX = 2000
+MAX = 500
 
 @app.route('/')
 def get_current_time():
@@ -20,7 +24,7 @@ def get_current_time():
 
 
 #search text API
-@app.route('/searchText',methods=['GET'])
+@app.route('/searchText',methods=['POST'])
 def searchText():
 
     global doc_collection,tweet_collection
@@ -99,7 +103,7 @@ def searchText():
 
 
 #search fields API
-@app.route('/searchFields',methods=['GET'])
+@app.route('/searchFields',methods=['POST'])
 def search_fields():
     global doc_collection,tweet_collection
 
