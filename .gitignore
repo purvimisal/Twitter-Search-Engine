@@ -60,3 +60,5 @@ bower_components
 
 *.sublime*
 .vscode
+/twitter-frontend/.idea/
+/twitter-frontend/node_modules/
