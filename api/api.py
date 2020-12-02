@@ -14,17 +14,11 @@ doc_collection = None
 tweet_collection = None
 MAX = 500
 
-@app.route('/')
-def get_current_time():
-    resp = {'time': time.time()}
-    print(resp)
-    return resp
-
 
 #search text API
 @app.route('/searchText',methods=['POST'])
 def searchText():
-
+    start = time.time()
     global doc_collection,tweet_collection
     json_body = request.get_json()
 
@@ -36,7 +30,6 @@ def searchText():
 
     query = { "word":{"$in":words}}
 
-    print('query : ' + str(query))
     datas = doc_collection.find(query)
 
 
@@ -68,7 +61,6 @@ def searchText():
     #query = { "_id":{"$in":final_list}}
 
     #finding the docs fro tweet collection
-    print('query : ' + str(query))
     query = { "_id":{"$in":final_query_list}}
     #query = { "match":query}
 
@@ -87,9 +79,7 @@ def searchText():
 
 
     response = (sorted(response, key=lambda x: -x['score']))
-    #print('final response' + str(response))
 
-    print(type(response))
     #json_list = []
     #for res in response:
     #    json_obj = {'doc_info':res}
@@ -97,12 +87,14 @@ def searchText():
 
 
     json_data = json.loads(dumps(response))
-    return jsonify({'data': json_data })
+    end = time.time()
+    return jsonify({'data': json_data, 'time_taken': round(end-start, 5) })
 
 
 #search fields API
 @app.route('/searchFields',methods=['POST'])
 def search_fields():
+    start = time.time()
     global doc_collection,tweet_collection
 
     ''' 
@@ -131,7 +123,7 @@ def search_fields():
     
     if json_body['user_mention']:
         field_count += 1
-        query['entitities.user_mentions.name'] =  json_body['user_mention'] 
+        query['entities.user_mentions.name'] =  json_body['user_mention'] 
     
     if json_body['hashtag']:
         field_count += 1
@@ -143,24 +135,27 @@ def search_fields():
     filter_list = []
     for key, val in query.items():
         filter_list.append({key:val})
-
     and_query = {"$and" : filter_list}
-    response_and = list(tweet_collection.find(and_query))
+    response_and = list(tweet_collection.find(and_query).limit(MAX))
+    response_or = []
     if field_count == 1 or len(response_and)>=MAX: 
         response = json.loads(dumps(response_and))
-        return jsonify(response)
+        end = time.time()
+        jsonify({'data': response, 'time_taken': round(end-start, 5) })
     elif len(response_and) == 0:
         or_query = {"$or" : filter_list}
         response_or = list(tweet_collection.find(or_query).limit(MAX))
         response = json.loads(dumps(response_or))
-        return jsonify(response)
+        end = time.time()
+        jsonify({'data': response, 'time_taken': round(end-start, 5) })
     else:
         lim = MAX-len(response_and)
         or_query = {"$or" : filter_list}
         response_or = list(tweet_collection.find(or_query).limit(lim))
         if len(response_and) == len(response_or):
             response = json.loads(dumps(response_or))
-            return jsonify(response)
+            end = time.time()
+            jsonify({'data': response, 'time_taken': round(end-start, 5) })
 
     response = response_and.copy()
     for obj in response_or:
@@ -168,7 +163,8 @@ def search_fields():
             response.append(obj)
 
     response = json.loads(dumps(response))
-    return jsonify(response)
+    end = time.time()
+    return jsonify({'data': response, 'time_taken': round(end-start, 5) })
     
 
 #method to connect Db
