@@ -151,7 +151,7 @@ const SearchText = (callback, deps) => {
                                                                 Created at: {item.tweet.created_at.split('+')[0]}
                                                             </Typography>
                                                             <Typography>
-                                                                Score: {item.score} Retweets: {item.tweet.retweet_count} Replies: {item.tweet.reply_count}
+                                                                Retweets: {item.tweet.retweet_count} Replies: {item.tweet.reply_count}
                                                             </Typography>
                                                         </React.Fragment>
                                                     }
