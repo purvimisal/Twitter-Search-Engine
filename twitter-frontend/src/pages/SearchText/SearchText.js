@@ -27,13 +27,14 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.background.paper,
     },
     inline: {
-        display: 'inline',
+        display: 'block',
     },
 }));
 
 const SearchText = (callback, deps) => {
     const classes = useStyles();
     const [tweetList, setTweetList] = useState([])
+    const [timeStamp, setTimeStamp] = useState('')
     const [searchTextVal, setSearchTextVal] = useState('test')
     const [isFetching, setIsFetching] = useState(false)
 
@@ -51,7 +52,7 @@ const SearchText = (callback, deps) => {
             .then(res => res.json())
             .then(
                 (result) => {
-
+                    setTimeStamp('Time required: ' + result.time_taken + 's')
                     result.data.map((item, idx) => {
                         console.log(item.tweet.text)
                     })
@@ -108,6 +109,7 @@ const SearchText = (callback, deps) => {
                             Search
                         </Button>
                     </Box>
+                    <Typography>{timeStamp}</Typography>
                     <Box
                         xs={12}
                         sm={12}
@@ -128,7 +130,7 @@ const SearchText = (callback, deps) => {
                                                     />
                                                 </ListItemAvatar>
                                                 <ListItemText
-                                                    primary={item.tweet.user_name}
+                                                    primary={(idx+1) + ': ' + item.tweet.user_name}
                                                     secondary={
                                                         <React.Fragment>
                                                             <Typography
@@ -139,7 +141,18 @@ const SearchText = (callback, deps) => {
                                                             >
                                                                 {item.tweet.text}
                                                             </Typography>
-                                                            {" ~ " + item.tweet.user_screen_name}
+                                                            <Typography>
+                                                                {" ~ " + item.tweet.user_screen_name}
+                                                            </Typography>
+                                                            {item.tweet.entities.hashtags.map((it, idx) => {
+                                                                <Typography>#{it}</Typography>
+                                                            })}
+                                                            <Typography>
+                                                                Created at: {item.tweet.created_at.split('+')[0]}
+                                                            </Typography>
+                                                            <Typography>
+                                                                Score: {item.score} Retweets: {item.tweet.retweet_count} Replies: {item.tweet.reply_count}
+                                                            </Typography>
                                                         </React.Fragment>
                                                     }
                                                 />

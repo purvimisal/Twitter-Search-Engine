@@ -6,7 +6,7 @@ import TextField from "@material-ui/core/TextField";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import {
     DragHandleOutlined,
-    LocationCityOutlined,
+    LocationCityOutlined, MergeType,
     Person,
     SearchRounded
 } from "@material-ui/icons";
@@ -39,6 +39,7 @@ const useStyles = makeStyles((theme) => ({
 const Home = (callback, deps) => {
     const classes = useStyles();
     const [tweetList, setTweetList] = useState([])
+    const [timeStamp, setTimeStamp] = useState('')
     const [hashtagVal, setHashtagVal] = useState('')
     const [userMentionVal, setUserMentionVal] = useState('')
     const [userLocationVal, setUserLocationVal] = useState('')
@@ -63,7 +64,9 @@ const Home = (callback, deps) => {
             .then(
                 (result) => {
                     console.log(result)
-                    setTweetList(result)
+                    setTimeStamp('Time required: ' + result.time_taken + 's')
+                    setTweetList(result.data)
+
                     setIsFetching(false)
                 }
             )
@@ -168,6 +171,7 @@ const Home = (callback, deps) => {
                             Search
                         </Button>
                     </Box>
+                    <Typography>{timeStamp}</Typography>
                     <Box
                         xs={12}
                         sm={12}
@@ -188,7 +192,7 @@ const Home = (callback, deps) => {
                                                     />
                                                 </ListItemAvatar>
                                                 <ListItemText
-                                                    primary={item.user_name}
+                                                    primary={(idx+1) + ': ' + item.user_name}
                                                     secondary={
                                                         <React.Fragment>
                                                             <Typography
@@ -199,7 +203,18 @@ const Home = (callback, deps) => {
                                                             >
                                                                 {item.text}
                                                             </Typography>
-                                                            {" ~ " + item.user_screen_name}
+                                                            <Typography>
+                                                                {" ~ " + item.user_screen_name}
+                                                            </Typography>
+                                                            {item.entities.hashtags.map((it, idx) => {
+                                                                <Typography>#{it}</Typography>
+                                                            })}
+                                                            <Typography>
+                                                                Created at: {item.created_at.split('+')[0]}
+                                                            </Typography>
+                                                            <Typography>
+                                                                Retweets: {item.retweet_count} Replies: {item.reply_count}
+                                                            </Typography>
                                                         </React.Fragment>
                                                     }
                                                 />
